@@ -4,10 +4,54 @@
 
 @tailwind screens;
 
+@layer base {
+    
+}
+
 @layer components {
     .btn-blue {
       @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
     }
+    .bg-stripes {
+      background-image: linear-gradient(45deg,var(--stripes-color) 12.5%,transparent 12.5%,transparent 50%,var(--stripes-color) 50%,var(--stripes-color) 62.5%,transparent 62.5%,transparent 100%);
+      background-size: 5.66px 5.66px
+  }
+  
+  .bg-stripes-white {
+      --stripes-color: hsla(0,0%,100%,0.4)
+  }
+  
+  .bg-stripes-amber-500 {
+      --stripes-color: rgba(245,158,11,0.4)
+  }
+  
+  .bg-stripes-emerald-500 {
+      --stripes-color: rgba(16,185,129,0.4)
+  }
+  
+  .bg-stripes-fuchsia-500 {
+      --stripes-color: rgba(217,70,239,0.4)
+  }
+  
+  .bg-stripes-indigo-500 {
+      --stripes-color: rgba(99,102,241,0.4)
+  }
+  
+  .bg-stripes-light-blue-500 {
+      --stripes-color: rgba(14,165,233,0.4)
+  }
+  
+  .bg-stripes-purple-500 {
+      --stripes-color: rgba(168,85,247,0.4)
+  }
+  
+  .bg-stripes-red-900 {
+      --stripes-color: rgba(127,29,29,0.4)
+  }
+  
+  .bg-stripes-rose-500 {
+      --stripes-color: rgba(244,63,94,0.4)
+  }
 }
 @layer utilities {
     /* @variants dark {

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/tailwind.css">
+</head>
+<body>
+    <div class="container mx-auto">
+        <span class="decoration-clone bg-clip-text bg-gradient-to-b from-yellow-400 to-red-500 text-transparent">
+            Hello<br/>World
+        </span>
+
+        <div class="flex flex-col items-center justify-center">
+            <div class="box-border h-32 w-32 p-4 border-4 border-blue-400 bg-light-blue-200 rounded-md">
+                <div class="h-full w-full bg-stripes bg-stripes-white bg-blue-400">
+                    32x32
+                </div>
+            </div>
+            <strong>宽高包括元素的边框和内边距</strong>
+        </div>
+
+        <div class="flex flex-col items-center justify-center bg-teal-200">
+            <div class="box-content h-32 w-32 p-4 border-4 border-emerald-400 bg-emerald-200 rounded-md">
+                <div class="h-full w-full bg-green-400 bg-stripes bg-stripes-white">
+                    32x32
+                </div>
+            </div>
+            <p><strong>浏览器在元素的指定宽度或高度的基础上添加边框和内边距</strong></p>
+        </div>
+
+
+        
+
+    </div>
+</body>
+</html>
