@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/tailwind.css">
+</head>
+<body class="space-y-6 p-10">
+    <div class="bg-rose-300">
+        <img class="object-contain h-48 w-full" src="images/img3.jpeg" />
+        <p>使用 .object-contain 调整元素内容的大小，使其保持在容器内。</p>
+    </div>
+
+    <div class="bg-indigo-300">
+        <img src="images/img1.png" class="object-cover h-48 w-full" />
+        <p>使用 .object-cover 调整元素内容的大小以覆盖其容器。</p>
+    </div>
+
+    <div class="bg-light-blue-300">
+        <img src="images/img1.png" alt="" class="object-fill h-48 w-full">
+        <p>使用 .object-fill 拉伸元素的内容以适应其容器。</p>
+    </div>
+
+    <div class="bg-yellow-300">
+        <img src="images/img1.png" alt="" class="object-scale-down h-24 w-full">
+        <p>以原始大小显示元素的内容，但必要时使用 .object-scale-down 将其缩小以适应其容器。</p>
+    </div>
+
+    <div class="bg-green-300">
+        <img src="images/img5.png" class="object-contain md:object-scale-down min-h-40 w-screen">
+        <p>
+            要控制可替换元素的内容如何只在特定的断点处调整大小，可以在任何现有的 object fit 功能类前添加 {screen}: 前缀。例如，将类 md:object-scale-down 添加到元素中，将在中等尺寸及以上屏幕上应用 object-scale-down 功能。
+        </p>
+    </div>
+</body>
+</html>
