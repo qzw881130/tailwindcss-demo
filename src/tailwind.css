@@ -52,6 +52,17 @@
   .bg-stripes-rose-500 {
       --stripes-color: rgba(244,63,94,0.4)
   }
+
+  .bg-light-blue-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(125,211,252,var(--tw-bg-opacity))
+  }
+
+  .bg-light-blue-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(14,165,233,var(--tw-bg-opacity))
+}
+
 }
 @layer utilities {
     /* @variants dark {
