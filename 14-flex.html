@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/tailwind.css">
+</head>
+<body class="space-y-4">
+    <div class="rounded-md bg-indigo-50 p-6">
+        <p class="text-sm text-indigo-400">Items don't grow when there's extra space</p>
+        <div class="mt-2 flex space-x-4">
+            <div class="flex-initial rounded-md bg-indigo-600 text-white text-2xl font-semibold flex justify-center py-3 px-6">Short</div>
+            <div class="flex-initial rounded-md bg-indigo-600 text-white text-2xl font-semibold flex justify-center py-3 px-6">Medium length</div>
+        </div>
+
+        <p class="mt-8 text-sm text-indigo-400">Items shrink if possible when needed</p>
+        <div class="mt-2 flex space-x-4">
+            <div class="flex-initial rounded-md bg-indigo-600 items-center text-white text-2xl font-semibold flex justify-center py-3 px-6">Short</div>
+            <div class="flex-initial rounded-md bg-indigo-600 items-center text-white text-2xl font-semibold flex justify-center py-3 px-6">Short</div>
+            <div class="flex-initial rounded-md bg-indigo-600 items-center text-white text-2xl font-semibold flex justify-center py-3 px-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ad labore ipsam, aut rem quo repellat esse tempore id, quidem
+            </div>
+        </div>
+    </div>
+
+    <div class="rounded-md p-6 bg-yellow-100 flex space-x-3">
+        <div class="flex-1 py-3 bg-yellow-500 text-2xl justify-center rounded-md flex items-center text-white font-semibold">Short</div>
+        <div class="flex-1 py-3 bg-yellow-500 text-2xl justify-center rounded-md flex items-center text-white font-semibold">Medium length</div>
+        <div class="flex-1 py-3 bg-yellow-500 text-2xl justify-center rounded-md flex items-center text-white font-semibold">Significantly larger amount of content</div>
+    </div>
+
+    <div class="rounded-t-xl overflow-hidden bg-lime-50 bg-gradient-to-r from-light-blue-50 to-light-blue-100 p-10">
+        <p class="text-sm text-light-blue-600">Default behavior</p>
+        <div class="mt-2 flex space-x-4">
+          <div class="rounded-md bg-light-blue-500 text-white font-semibold flex items-center justify-center py-3 px-6">
+            Short
+          </div>
+          <div class="rounded-md bg-light-blue-500 text-white font-semibold flex items-center justify-center py-3 px-6">
+            Medium length
+          </div>
+          <div class="rounded-md bg-light-blue-500 text-white font-semibold flex items-center justify-center py-3 px-6">
+            Significantly larger amount of content
+          </div>
+        </div>
+      
+        <p class="mt-8 text-sm text-light-blue-600">With <code>.flex-auto</code></p>
+        <div class="mt-2 flex space-x-4">
+          <div class="flex-auto rounded-md bg-light-blue-500 text-white font-semibold flex items-center justify-center py-3 px-6">
+            Short
+          </div>
+          <div class="flex-auto rounded-md bg-light-blue-500 text-white font-semibold flex items-center justify-center py-3 px-6">
+            Medium length
+          </div>
+          <div class="flex-auto rounded-md bg-light-blue-500 text-white font-semibold flex items-center justify-center py-3 px-6">
+            Significantly larger amount of content
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-t-xl overflow-hidden bg-gradient-to-r from-emerald-50 to-teal-100 p-10">
+        <div class="flex space-x-4">
+          <div class="flex-1 rounded-md bg-emerald-300 text-white font-semibold flex items-center justify-center py-3 px-6">
+            Item that can grow or shrink if needed
+          </div>
+          <div class="flex-none rounded-md bg-emerald-500 text-white font-semibold flex items-center justify-center py-3 px-6">
+            Item that cannot grow or shrink
+          </div>
+          <div class="flex-1 rounded-md bg-emerald-300 text-white font-semibold flex items-center justify-center py-3 px-6">
+            Item that can grow or shrink if needed
+          </div>
+        </div>
+      </div>
+</body>
+</html>
