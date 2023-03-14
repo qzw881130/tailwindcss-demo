@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/tailwind.css">
+</head>
+<body class="space-y-6">
+    <div class="rounded-md p-6 bg-violet-100 flex space-x-4 justify-start">
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">1</div>
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">2</div>
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">3</div>
+    </div>
+
+    <div class="rounded-md p-6 bg-violet-100 flex space-x-4 justify-center">
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">1</div>
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">2</div>
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">3</div>
+    </div>
+
+    <div class="rounded-md p-6 bg-violet-100 flex space-x-4 justify-end">
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">1</div>
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">2</div>
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">3</div>
+    </div>
+
+    <div class="rounded-md p-6 bg-violet-100 flex space-x-4 justify-between">
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">1</div>
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">2</div>
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">3</div>
+    </div>
+
+    <p>使用 justify-around 让项目沿着容器主轴排列，并使每个项目两侧的距离相等。</p>
+    <div class="rounded-md p-6 bg-violet-100 flex space-x-4 justify-around">
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">1</div>
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">2</div>
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">3</div>
+    </div>
+
+    <p>使用 justify-evenly 让项目沿着容器主轴排列，并使每个项目周围的距离相等，但不像使用 justify-around 时项目之间有双倍的距离</p>
+    <div class="rounded-md p-6 bg-violet-100 flex space-x-4 justify-evenly">
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">1</div>
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">2</div>
+        <div class="rounded-md bg-violet-500 px-6 py-4 text-white text-2xl">3</div>
+    </div>
+</body>
+</html>
