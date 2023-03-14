@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/tailwind.css">
+</head>
+<body class="space-y-4">
+    <p>row-span-{x},col-span-{x} 可同时用</p>
+    <div class="h-64 grid grid-rows-4 grid-flow-col gap-2 bg-blue-100 p-4">
+        <div class="row-span-2 bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">1</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">2</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">3</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">4</div>
+        <div class="col-span-2 row-span-2 bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">5</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">6</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">7</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">7</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">7</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">x</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">7</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">7</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">7</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">7</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">7</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">7</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">7</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">7</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">7</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">7</div>
+      </div>
+
+      <div class="h-64 grid grid-rows-3 grid-flow-col gap-2 bg-blue-100 p-4">
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">A</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">A</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">A</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">A</div>
+        <div class="row-start-2 row-span-2 bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">从第2行开始连续2行</div>
+        
+        <div class="row-end-3 row-span-2 bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">结束于第3行，往上推2行</div>
+        <div class="bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">A</div>
+        <div class="row-start-1 row-end-4 bg-light-blue-500 rounded-md flex items-center justify-center text-white text-2xl font-extrabold">从第1行开始结束于第4行</div>
+      </div>
+</body>
+</html>
